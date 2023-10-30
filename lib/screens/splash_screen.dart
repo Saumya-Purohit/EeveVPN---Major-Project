@@ -26,8 +26,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
       //navigate to home
       Get.off(() => HomeScreen());
-      // Navigator.pushReplacement(
-      //     context, MaterialPageRoute(builder: (_) => HomeScreen()));
     });
   }
 
@@ -37,26 +35,36 @@ class _SplashScreenState extends State<SplashScreen> {
     mq = MediaQuery.of(context).size;
 
     return Scaffold(
-      body: Stack(
-        children: [
-          //app logo
-          Positioned(
-              left: mq.width * .3,
-              top: mq.height * .2,
-              width: mq.width * .4,
-              child: Image.asset('assets/images/logo.png')),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [Colors.brown[300]!, Colors.brown[700]!],
+          ),
+        ),
+        child: Stack(
+          children: [
+            //app logo
+            Positioned(
+                left: mq.width * .2, // Adjusted to center the larger image
+                top: mq.height * .1, // Adjusted to center the larger image
+                width: mq.width * .6, // Increased from .4 to .6
+                height:
+                    mq.height * .6, // Added to control the height of the image
+                child: Image.asset('assets/images/logo.png')),
 
-          //label
-          Positioned(
-              bottom: mq.height * .15,
-              width: mq.width,
-              child: Text(
-                'MADE IN INDIA WITH ❤️',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: Theme.of(context).lightText, letterSpacing: 1),
-              ))
-        ],
+            //label
+            Positioned(
+                bottom: mq.height * .15,
+                width: mq.width,
+                child: Text(
+                  'MADE IN INDIA WITH ❤️',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.amber[800], letterSpacing: 1),
+                ))
+          ],
+        ),
       ),
     );
   }
