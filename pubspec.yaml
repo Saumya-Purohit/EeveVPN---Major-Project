@@ -1,7 +1,7 @@
 # By Harsh H. Rajpurohit
 name: vpn_basic_project
 description: Flutter Android VPN based on OpenVPN Library.
-publish_to: 'none'
+publish_to: "none"
 
 # App Version
 version: 1.0.0+1
@@ -29,7 +29,7 @@ dependencies:
   # For Lottie Animation
   lottie: ^2.3.2
 
-  # For storing data (in local storage) 
+  # For storing data (in local storage)
   hive: ^2.2.3
   hive_flutter: ^1.1.0
 
@@ -42,13 +42,12 @@ dependencies:
   # For Remote Config
   firebase_remote_config: ^4.2.3
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # Change package name  
-  # change_app_package_name: ^1.1.0
+  # Change package name
+  change_app_package_name: ^1.1.0
 
 flutter:
   # Enabling material design

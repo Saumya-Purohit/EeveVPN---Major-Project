@@ -1,4 +1,4 @@
-package com.harshRajpurohit.freeVpn;
+package com.saumyaPurohit.EeveeVPN;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
