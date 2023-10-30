@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(milliseconds: 1500), () {
+    Future.delayed(Duration(milliseconds: 2000), () {
       //exit full-screen
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
 
