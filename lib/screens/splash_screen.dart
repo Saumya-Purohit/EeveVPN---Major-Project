@@ -45,13 +45,28 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
         child: Stack(
           children: [
+            // Circular background
+            Positioned(
+              left: mq.width * .1,
+              top: mq.height * .1,
+              width: mq.width * .8,
+              height: mq.height * .8,
+              child: Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: RadialGradient(
+                    colors: [Colors.brown[700]!, Colors.brown[300]!],
+                  ),
+                ),
+              ),
+            ),
+
             //app logo
             Positioned(
                 left: mq.width * .2, // Adjusted to center the larger image
-                top: mq.height * .1, // Adjusted to center the larger image
+                top: mq.height * .2, // Adjusted to center the larger image
                 width: mq.width * .6, // Increased from .4 to .6
-                height:
-                    mq.height * .6, // Added to control the height of the image
+                height: mq.height * .6, // Increased from .6 to .8
                 child: Image.asset('assets/images/logo.png')),
 
             //label
