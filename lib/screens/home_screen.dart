@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
       //app bar
       appBar: AppBar(
         leading: Icon(CupertinoIcons.home),
-        title: Text('Free OpenVPN'),
+        title: Text('EeveeVPN'),
         actions: [
           IconButton(
               onPressed: () {
