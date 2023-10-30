@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:vpn_basic_project/helpers/my_dialogs.dart';
 
 import '../controllers/home_controller.dart';
 import '../helpers/pref.dart';
@@ -29,7 +30,7 @@ class VpnCard extends StatelessWidget {
             Pref.vpn = vpn;
             Get.back();
 
-            // MyDialogs.success(msg: 'Connecting VPN Location...');
+            MyDialogs.success(msg: 'Connecting VPN Location...');
 
             if (controller.vpnState.value == VpnEngine.vpnConnected) {
               VpnEngine.stopVpn();
