@@ -76,7 +76,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('MADE IN ',
+                    Text('MADE IN  ',
                         style: TextStyle(
                             color: Colors.amber[800],
                             letterSpacing: 1,
