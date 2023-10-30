@@ -73,20 +73,17 @@ class _SplashScreenState extends State<SplashScreen> {
             Positioned(
                 bottom: mq.height * .15,
                 width: mq.width,
-                child: RichText(
-                  textAlign: TextAlign.center,
-                  text: TextSpan(
-                    style: DefaultTextStyle.of(context).style,
-                    children: <InlineSpan>[
-                      TextSpan(
-                          text: 'MADE IN ',
-                          style: TextStyle(
-                              color: Colors.amber[800], letterSpacing: 1)),
-                      WidgetSpan(
-                          child: Image.asset('assets/images/UPES_LOGO.png',
-                              scale: 5)), // Adjust scale as needed
-                    ],
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('MADE IN ',
+                        style: TextStyle(
+                            color: Colors.amber[800],
+                            letterSpacing: 1,
+                            fontSize: 20)), // Adjusted font size
+                    Image.asset('assets/images/UPES_LOGO.png',
+                        scale: 2), // Adjusted scale to make the image larger
+                  ],
                 ))
           ],
         ),
