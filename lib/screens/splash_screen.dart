@@ -64,8 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
             //app logo
             Positioned(
                 left: mq.width * .2,
-                top: mq.height *
-                    .15, // Adjusted to move the image upwards with the circle
+                top: mq.height * .15,
                 width: mq.width * .6,
                 height: mq.height * .6,
                 child: Image.asset('assets/images/logo.png')),
@@ -74,10 +73,20 @@ class _SplashScreenState extends State<SplashScreen> {
             Positioned(
                 bottom: mq.height * .15,
                 width: mq.width,
-                child: Text(
-                  'MADE IN INDIA WITH ❤️',
+                child: RichText(
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.amber[800], letterSpacing: 1),
+                  text: TextSpan(
+                    style: DefaultTextStyle.of(context).style,
+                    children: <InlineSpan>[
+                      TextSpan(
+                          text: 'MADE IN ',
+                          style: TextStyle(
+                              color: Colors.amber[800], letterSpacing: 1)),
+                      WidgetSpan(
+                          child: Image.asset('assets/images/UPES_LOGO.png',
+                              scale: 5)), // Adjust scale as needed
+                    ],
+                  ),
                 ))
           ],
         ),
