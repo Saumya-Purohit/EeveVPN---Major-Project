@@ -76,7 +76,7 @@ class LocationScreen extends StatelessWidget {
 
             //text
             Text(
-              'Loading VPNs... 😌',
+              'Loading VPNs... 🌎💫✨',
               style: TextStyle(
                   fontSize: 18,
                   color: Colors.black54,
