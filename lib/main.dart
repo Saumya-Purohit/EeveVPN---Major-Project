@@ -44,8 +44,14 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
 
       //theme
-      theme:
-          ThemeData(appBarTheme: AppBarTheme(centerTitle: true, elevation: 3)),
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          centerTitle: true,
+          elevation: 3,
+          backgroundColor: Colors.brown[700], // Set the background color here
+        ),
+        scaffoldBackgroundColor: Color.fromARGB(255, 207, 190, 184),
+      ),
 
       themeMode: Pref.isDarkMode ? ThemeMode.dark : ThemeMode.light,
 
@@ -61,5 +67,6 @@ class MyApp extends StatelessWidget {
 
 extension AppTheme on ThemeData {
   Color get lightText => Pref.isDarkMode ? Colors.white70 : Colors.black54;
-  Color get bottomNav => Pref.isDarkMode ? Colors.white12 : Colors.blue;
+  Color get bottomNav =>
+      Pref.isDarkMode ? Colors.brown[300]! : Colors.brown[700]!;
 }
