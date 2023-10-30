@@ -22,7 +22,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   # For API Call
-  http: ^1.0.0
+  http: ^1.1.0
 
   # Converting CSV data to List
   csv: ^5.0.2
