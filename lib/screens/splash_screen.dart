@@ -48,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
             // Circular background
             Positioned(
               left: mq.width * .1,
-              top: mq.height * .1,
+              top: mq.height * .05, // Adjusted to move the circle upwards
               width: mq.width * .8,
               height: mq.height * .8,
               child: Container(
@@ -63,10 +63,11 @@ class _SplashScreenState extends State<SplashScreen> {
 
             //app logo
             Positioned(
-                left: mq.width * .2, // Adjusted to center the larger image
-                top: mq.height * .2, // Adjusted to center the larger image
-                width: mq.width * .6, // Increased from .4 to .6
-                height: mq.height * .6, // Increased from .6 to .8
+                left: mq.width * .2,
+                top: mq.height *
+                    .15, // Adjusted to move the image upwards with the circle
+                width: mq.width * .6,
+                height: mq.height * .6,
                 child: Image.asset('assets/images/logo.png')),
 
             //label
