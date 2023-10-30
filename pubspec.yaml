@@ -25,7 +25,7 @@ dependencies:
   http: ^1.1.0
 
   # Converting CSV data to List
-  csv: ^5.0.2
+  csv: ^5.1.1
 
   # For Lottie Animation
   lottie: ^2.3.2
