@@ -13,8 +13,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_launcher_icons: ^0.13.1
   # Getx for state management
+
   get: ^4.6.5
 
   # Cupertino style icons
@@ -42,6 +43,12 @@ dependencies:
   # For Remote Config
   firebase_remote_config: ^4.2.3
 
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -60,3 +67,4 @@ flutter:
     - assets/images/
     - assets/lottie/
     - assets/flags/
+    - assets/images/logo.png
