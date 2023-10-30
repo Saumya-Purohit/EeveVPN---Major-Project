@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "480415667223",
-    "project_id": "freevpn-flutter",
-    "storage_bucket": "freevpn-flutter.appspot.com"
+    "project_number": "473937239882",
+    "project_id": "eevevpn",
+    "storage_bucket": "eevevpn.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:480415667223:android:6a5177701d3e4bb2e63852",
+        "mobilesdk_app_id": "1:473937239882:android:9eb95820f7371d6322abb3",
         "android_client_info": {
           "package_name": "com.saumyaPurohit.EeveeVPN"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "480415667223-cp82h16vl2ms0u4bcs40qq273ibfhp79.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB278a0ik31BTSL3w2tgMgSgQQJj7avakM"
+          "current_key": "AIzaSyDLlur8z3OXBc2-99p-Pls3Z3AP4EziYoA"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "480415667223-cp82h16vl2ms0u4bcs40qq273ibfhp79.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

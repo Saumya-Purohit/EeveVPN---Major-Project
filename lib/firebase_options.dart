@@ -53,10 +53,10 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB278a0ik31BTSL3w2tgMgSgQQJj7avakM',
-    appId: '1:480415667223:android:6a5177701d3e4bb2e63852',
-    messagingSenderId: '480415667223',
-    projectId: 'freevpn-flutter',
-    storageBucket: 'freevpn-flutter.appspot.com',
+    apiKey: 'AIzaSyDLlur8z3OXBc2-99p-Pls3Z3AP4EziYoA',
+    appId: '1:473937239882:android:9eb95820f7371d6322abb3',
+    messagingSenderId: '473937239882',
+    projectId: 'eevevpn',
+    storageBucket: 'eevevpn.appspot.com',
   );
 }
