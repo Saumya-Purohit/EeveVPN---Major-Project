@@ -64,25 +64,29 @@ class LocationScreen extends StatelessWidget {
           right: mq.width * .04),
       itemBuilder: (ctx, i) => VpnCard(vpn: _controller.vpnList[i]));
 
-  _loadingWidget() => SizedBox(
-        width: double.infinity,
-        height: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            //lottie animation
-            LottieBuilder.asset('assets/lottie/loading.json',
-                width: mq.width * .7),
+  _loadingWidget() => Padding(
+        padding:
+            const EdgeInsets.only(bottom: 100), // adjust the value as needed
+        child: SizedBox(
+          width: double.infinity,
+          height: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              //lottie animation
+              LottieBuilder.asset('assets/lottie/loading.json',
+                  width: mq.width * .7),
 
-            //text
-            Text(
-              'Loading VPNs... 🌎💫✨',
-              style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.black54,
-                  fontWeight: FontWeight.bold),
-            )
-          ],
+              //text
+              Text(
+                'Loading VPNs... 🌎💫✨',
+                style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.black54,
+                    fontWeight: FontWeight.bold),
+              )
+            ],
+          ),
         ),
       );
 
