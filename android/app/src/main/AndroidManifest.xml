@@ -14,7 +14,7 @@
     <application
         android:name="${applicationName}"
         android:label="EeveeVPN"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/launcher_icon"
         tools:ignore="AllowBackup">
         
         <!-- For Ads -->
