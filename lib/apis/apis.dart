@@ -53,20 +53,3 @@ class APIs {
     }
   }
 }
-
-// Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
-
-// For Understanding Purpose
-
-//*** CSV Data ***
-// Name,    Country,  Ping
-// Test1,   JP,       12
-// Test2,   US,       112
-// Test3,   IN,       7
-
-//*** List Data ***
-// [ [Name, Country, Ping], [Test1, JP, 12], [Test2, US, 112], [Test3, IN, 7] ]
-
-//*** Json Data ***
-// {"Name": "Test1", "Country": "JP", "Ping": 12}
-
