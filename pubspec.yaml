@@ -42,6 +42,8 @@ dependencies:
 
   # For Remote Config
   firebase_remote_config: ^4.2.3
+  # other dependencies
+  kommunicate_flutter: ^1.8.0
 
 flutter_launcher_icons:
   android: "launcher_icon"

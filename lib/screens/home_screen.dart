@@ -225,44 +225,120 @@ class HomeScreen extends StatelessWidget {
         ],
       );
 
-  //bottom nav to change location
-  Widget _changeLocation(BuildContext context) => SafeArea(
-          child: Semantics(
-        button: true,
-        child: InkWell(
-          onTap: () => Get.to(() => LocationScreen()),
-          child: Container(
-              color: Theme.of(context).bottomNav,
-              padding: EdgeInsets.symmetric(horizontal: mq.width * .04),
-              height: 60,
-              child: Row(
-                children: [
-                  //icon
-                  Icon(CupertinoIcons.globe, color: Colors.white, size: 28),
-
-                  //for adding some space
-                  SizedBox(width: 10),
-
-                  //text
-                  Text(
-                    'Change Location',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500),
-                  ),
-
-                  //for covering available spacing
-                  Spacer(),
-
-                  //icon
-                  CircleAvatar(
-                    backgroundColor: Colors.white,
-                    child: Icon(Icons.keyboard_arrow_right_rounded,
-                        color: Colors.blue, size: 26),
-                  )
-                ],
-              )),
+  Widget _chatButton({required VoidCallback onPressed}) {
+    return Positioned(
+      top: -20, // Adjust this value to add more or less space
+      right: 8, // Adjust the right position as needed
+      child: InkWell(
+        onTap: onPressed,
+        child: Container(
+          padding: EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.blue, // Adjust the color as needed
+          ),
+          child: Icon(Icons.chat_bubble_outline, color: Colors.white, size: 28),
         ),
-      ));
+      ),
+    );
+  }
+
+  Widget _changeLocation(BuildContext context) => SafeArea(
+        child: Semantics(
+          button: true,
+          child: Stack(
+            alignment: Alignment.topRight,
+            children: [
+              InkWell(
+                onTap: () => Get.to(() => LocationScreen()),
+                child: Container(
+                  color: Theme.of(context).bottomNav,
+                  padding: EdgeInsets.symmetric(horizontal: mq.width * .04),
+                  height: 60,
+                  child: Row(
+                    children: [
+                      // icon
+                      Icon(CupertinoIcons.globe, color: Colors.white, size: 28),
+
+                      // for adding some space
+                      SizedBox(width: 10),
+
+                      // text
+                      Text(
+                        'Change Location',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+
+                      // for covering available spacing
+                      Spacer(),
+
+                      // icon
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Icon(Icons.keyboard_arrow_right_rounded,
+                            color: Colors.blue, size: 26),
+                      ),
+
+                      // for adding some space
+                      SizedBox(width: 10),
+
+                      // Add the chat button
+                      _chatButton(
+                        onPressed: () {
+                          launchChat(); // Call the function to launch the chat
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+
+//   //bottom nav to change location
+  // Widget _changeLocation(BuildContext context) => SafeArea(
+  //         child: Semantics(
+  //       button: true,
+  //       child: InkWell(
+  //         onTap: () => Get.to(() => LocationScreen()),
+  //         child: Container(
+  //             color: Theme.of(context).bottomNav,
+  //             padding: EdgeInsets.symmetric(horizontal: mq.width * .04),
+  //             height: 60,
+  //             child: Row(
+  //               children: [
+  //                 //icon
+  //                 Icon(CupertinoIcons.globe, color: Colors.white, size: 28),
+
+  //                 //for adding some space
+  //                 SizedBox(width: 10),
+
+  //                 //text
+  //                 Text(
+  //                   'Change Location',
+  //                   style: TextStyle(
+  //                       color: Colors.white,
+  //                       fontSize: 18,
+  //                       fontWeight: FontWeight.w500),
+  //                 ),
+
+  //                 //for covering available spacing
+  //                 Spacer(),
+
+  //                 //icon
+  //                 CircleAvatar(
+  //                   backgroundColor: Colors.white,
+  //                   child: Icon(Icons.keyboard_arrow_right_rounded,
+  //                       color: Colors.blue, size: 26),
+  //                 )
+  //               ],
+  //             )),
+  //       ),
+  //     ));
 }
