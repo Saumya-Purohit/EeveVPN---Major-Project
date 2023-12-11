@@ -227,7 +227,7 @@ class HomeScreen extends StatelessWidget {
 
   Widget _chatButton({required VoidCallback onPressed}) {
     return Positioned(
-      top: -20, // Adjust this value to add more or less space
+      top: 20, // Adjust this value to add more or less space
       right: 8, // Adjust the right position as needed
       child: InkWell(
         onTap: onPressed,
